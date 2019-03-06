@@ -1,0 +1,81 @@
+{
+    "asyncRouter": [
+        {
+            "path": "/",
+            "name": "Layout",
+            "component": "Layout",
+            "redirect": "/home",
+            "children": [
+                {
+                    "path": "/home",
+                    "name": "Home",
+                    "component": "home",
+                    "meta": {
+                        "title": "首页",
+                        "auth": true
+                    }
+                }
+            ]
+        },
+        {
+            "path": "/basic",
+            "name": "basic",
+            "component": "Layout",
+            "redirect": "/basic/basicone",
+            "meta": {
+                "title": "基础",
+                "auth": true
+            },
+            "children": [
+                {
+                    "path": "/basic/basicone",
+                    "name": "BasicOne",
+                    "component": "basic/BasicOne",
+                    "meta": {
+                        "title": "基础一",
+                        "auth": true
+                    }
+                },
+                {
+                    "path": "/basic/basictwo",
+                    "name": "BasicTwo",
+                    "component": "basic/BasicTwo",
+                    "meta": {
+                        "title": "基础二",
+                        "auth": true
+                    }
+                }
+            ]
+        },
+        {
+            "path": "/work",
+            "name": "work",
+            "component": "Layout",
+            "redirect": "/work/workone",
+            "meta": {
+                "title": "标题",
+                "auth": true
+            },
+            "children": [
+                {
+                    "path": "/work/workone",
+                    "name": "WorkOne",
+                    "component": "work/WorkOne",
+                    "meta": {
+                        "title": "标题一",
+                        "auth": true
+                    }
+                },
+                {
+                    "path": "/work/worktwo",
+                    "name": "workTwo",
+                    "component": "work/WorkTwo",
+                    "meta": {
+                        "title": "标题二",
+                        "auth": true
+                    }
+                }
+            ]
+        }
+    ]
+}
