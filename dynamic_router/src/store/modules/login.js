@@ -1,7 +1,8 @@
 const login = {
     state: {
         role: sessionStorage.getItem('ROLE'),
-        newrouter: []
+        newrouter: [],
+        tags: sessionStorage.getItem('TAGS')
     },
     mutations: {
         GET_ROLE: (state, role) => {
@@ -9,6 +10,9 @@ const login = {
         },
         SET_ROUTER: (state, newrouter) => {
             state.newrouter = newrouter;
+        },
+        SET_TAGS: (state, tags) => {
+            state.tags = tags;
         }
     },
     actions: {
@@ -37,6 +41,15 @@ const login = {
                 commit('SET_ROUTER', newrouter);
                 resolve(newrouter);
             }).catch(error => {
+                reject(error);
+            });
+        },
+        ADDTAGS({ commit }, tags) {
+            return new Promise((resolve, reject) => {
+                commit('SET_TAGS', tags);
+                sessionStorage.setItem('TAGS', JSON.stringify(tags));
+                resolve(tags);
+            }).catch((error) => {
                 reject(error);
             });
         }

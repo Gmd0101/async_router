@@ -6,21 +6,25 @@
 
 <script>
 export default {
-  name: 'App'
-}
+  name: "App"
+};
 </script>
 
 <style>
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-html,body{
+html,
+body {
   width: 100%;
   height: 100%;
 }
-#app{
+li {
+  list-style: none;
+}
+#app {
   width: 100%;
   height: 100%;
 }

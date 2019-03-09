@@ -12,7 +12,8 @@
                     "component": "home",
                     "meta": {
                         "title": "首页",
-                        "auth": true
+                        "auth": true,
+                        "affix": true
                     }
                 }
             ]
@@ -23,7 +24,7 @@
             "component": "Layout",
             "redirect": "/basic/basicone",
             "meta": {
-                "title": "基础",
+                "title": "基础管理",
                 "auth": true
             },
             "children": [
@@ -32,7 +33,7 @@
                     "name": "BasicOne",
                     "component": "basic/BasicOne",
                     "meta": {
-                        "title": "基础一",
+                        "title": "用户管理",
                         "auth": true
                     }
                 },
@@ -41,7 +42,7 @@
                     "name": "BasicTwo",
                     "component": "basic/BasicTwo",
                     "meta": {
-                        "title": "基础二",
+                        "title": "角色管理",
                         "auth": true
                     }
                 }
@@ -53,7 +54,7 @@
             "component": "Layout",
             "redirect": "/work/workone",
             "meta": {
-                "title": "标题",
+                "title": "办公管理",
                 "auth": true
             },
             "children": [
@@ -62,7 +63,7 @@
                     "name": "WorkOne",
                     "component": "work/WorkOne",
                     "meta": {
-                        "title": "标题一",
+                        "title": "商品管理",
                         "auth": true
                     }
                 },
@@ -71,7 +72,7 @@
                     "name": "workTwo",
                     "component": "work/WorkTwo",
                     "meta": {
-                        "title": "标题二",
+                        "title": "店铺管理",
                         "auth": true
                     }
                 }

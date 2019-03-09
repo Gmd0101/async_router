@@ -49,6 +49,7 @@ export default {
           this.$store.dispatch('Login','角色').then(function(){
             this.$router.push('/');
           }.bind(this));
+        }else{
         }
       }.bind(this));
     }

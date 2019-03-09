@@ -4,13 +4,20 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 // import { asyncRouterMap } from './router';
+
+//获取后台返回的路由
 import { getRouters } from './api/index'
 //element-ui
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+//图标
+import '../static/font-awesome-4.7.0/css/font-awesome.css'
 Vue.use(ElementUI);
+//echarts
 //状态管理
 import store from '@/store/index';
+
+
 Vue.config.productionTip = false
 
 
